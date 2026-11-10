@@ -1,9 +1,3 @@
-# Netlify site that only redirects the apex domain mdrep.eu to the canonical site.
-# The real website is on Cloudflare Pages (repo mdrep-eu/mdrep-site) at https://www.mdrep.eu.
-# Why: DNS stays at register.it (moving nameservers would disable the mailbox/PEC there) and
-# Cloudflare Pages can serve the apex only with Cloudflare DNS. Netlify gives a fixed IP
-# (A record mdrep.eu -> 75.2.60.5) with an automatic Let's Encrypt certificate.
-
 [build]
   publish = "public"
   command = ""
